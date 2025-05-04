@@ -8,19 +8,60 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
+  font-family: "Poppins", sans-serif;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(hsl(240, 61%, 78%), hsl(0, 5%, 92%)) no-repeat center center fixed;
+  background: linear-gradient(hsl(240, 47%, 73%), hsl(0, 6%, 87%)) no-repeat center center fixed;
 }
 body .container {
-  max-width: 600px;
-  height: 400px;
-  display: flex;
-  border: 1px solid hsl(0, 5%, 92%);
-}
-body .container div {
+  min-width: 30%;
   display: flex;
   flex-direction: column;
+  padding: 10px 15px;
+  margin: 0 10px;
+  background: linear-gradient(hsl(240, 47%, 73%), rgb(190, 187, 187)) no-repeat center center fixed;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+body .container .one, body .container .two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container .one select, body .container .one input, body .container .two select, body .container .two input {
+  width: 100%;
+  height: 33px;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 5%, 92%);
+  padding: 3px 5px;
+  font-weight: bold;
+  color: rgb(85, 82, 82);
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+body .container .one select:focus, body .container .one input:focus, body .container .two select:focus, body .container .two input:focus {
+  outline: none;
+  border: 1px solid rgb(160, 153, 153);
+}
+body .container .one select option, body .container .one input option, body .container .two select option, body .container .two input option {
+  padding: 5px;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: bold;
+}
+body .container .form {
+  display: flex;
+  gap: 10px;
+}
+body button {
+  height: 33px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: rgb(85, 82, 82);
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/index.css">
     <title>Currency Converter</title>
 </head>
+
 <body>
     <div class="container">
-        <div>
-            <select name="curr1" class="curr1"></select>
-            <input type="text" name="input" id="input" placeholder="Enter amount">
+        <div class="form">
+            <div class="one">
+                <select name="curr1" class="curr1"><option value="india">india</option></select>
+                <input type="text" name="input" id="input" placeholder="Enter amount">
+            </div>
+            <div class="two">
+                <select name="curr2" class="curr2"></select>
+                <input type="text" id="result">
+            </div>
         </div>
-        <div>
-            <select name="curr2" class="curr2"></select>
-            <input type="text" id="result">
-        </div>
-        <button class="btn"></button>
+        <button class="btn">Convert</button>
     </div>
 </body>
+
 </html>
