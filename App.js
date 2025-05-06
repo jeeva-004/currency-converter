@@ -4,7 +4,7 @@ const amount = document.querySelector('#input');
 const result = document.querySelector('#result');
 const error = document.querySelector('.error');
 // display the currencies in the select tag
-fetch('https://api.frankfurter.app/latest...')
+fetch('https://api.frankfurter.app/latest')
     .then(res => res.json())
     .then(data => {
         const rates = Object.keys(data.rates)
