@@ -70,3 +70,13 @@ body {
         cursor: pointer;
     }
 }
+
+.error{
+    display: none;
+    width: 100%;    
+    text-align: center;
+    height: 10px;
+    font-size: .7rem;
+    color: red;
+    margin: 0 0 5px;
+}
